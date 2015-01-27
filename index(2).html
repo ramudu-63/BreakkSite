@@ -49,7 +49,7 @@
 	/***** MODAL CONTACT *****/
 .modal-content {
 	border-radius: 0px;
-	width: 50% ;
+	width: 50% !important;
 	 -webkit-border-radius: 5px;
 	margin-left: 25%;
 	height: 100%;
@@ -83,7 +83,7 @@
 
 </style>
 	
-<script>
+<!--script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -91,6 +91,20 @@
 
 		ga('create', 'UA-59007652-1', 'auto');
 		ga('send', 'pageview');
+</script-->
+
+<script>
+	  var gaq = gaq || [];
+		_gaq.push(['_setAccount', 'UA-53294883-1']);
+		_gaq.push(['_setDomainName', 'breakk.co']);
+		_gaq.push(['_setAllowLinker', true]);
+		_gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
 			
 	
@@ -234,39 +248,13 @@
 				</div>	
 			</div>
 			</article>
-			<!--<article >
-			<div class="container" style="text-align:center">
-				<iframe id="player" width="960" height="432" src="http://player.vimeo.com/video/117681251?api=1&player_id=player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-			</div>
 			
-			</article-->
-			<article class="video" id="video">
-				<div class="clearfix"></div>
-				
-				<figure class="thumb-video animated" data-animation="fadeInUp" data-animation-delay="500">
-					<img src="img/hands.png" alt="//">
-					<figcaption>
-						<a href="#" class="show-video" data-video="video01"><span><i class="icon-play"></i></span></a>
-					</figcaption>
-				</figure>
-				
-				<div class="clearfix"></div>
-
-				<!-- Modal -->
-				<div class="modal fade" id="modal-video01" tabindex="-1" role="dialog" >
-					<div class="modal-dialog" >
-						<div class="modal-content" style="width:1260px;height:530px;margin:0 0">
-							<div class="modal-body" >
-
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cancel"></i></button>
-								<iframe class="iframe-video" style="width:1230px;height:500px" id="video01" src="http://player.vimeo.com/video/117681251?api=1&player_id=player" allowfullscreen></iframe>
-
-							</div>
-						</div>
-					</div>
+			<article >
+				<div class="container" style="text-align:center">
+					<iframe id="player" width="960" height="432" src="http://player.vimeo.com/video/117681251?api=1&player_id=player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</div>
-
 			</article>
+			
 			<article class="screenshots" id="uses">
 			<div class="container">
 				<h2 class="animated" data-animation="fadeIn" data-animation-delay="500">Breakk Anything!</h2>
@@ -517,16 +505,7 @@
 
 		</script-->
 		
-			<!--script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-53294883-1', 'auto');
-				ga('send', 'pageview');
-	
-			</script-->
+			
 		
 
 		 <!-- form action="/update" method="POST">
@@ -535,19 +514,8 @@
     		<!-- Placeholder that tells Preview where to put the selector>
     		<div class="selector-wrapper"></div>
 		</form-->
-		
-		<!--script for playing video-->
-		
-		<!--<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
 
-			<script>	
-				var player = $f(document.getElementById('player'));
-				player.addEvent('ready', function() { 
-				player.api('play');
-				});
-			</script>-->
-			
-			
+
 		<script>
    			 // Set up preview.
     		$('#url').preview({key:'your_embedly_key'})
