@@ -1006,7 +1006,7 @@ li { margin-bottom:10px}
  *
 /********************************  $Video  *********************************/
 .video {
-  background-image: url("../img/bg/video.jpg");
+ /* background-image: url("../img/bg/video.jpg");*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
